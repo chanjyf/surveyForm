@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="James Chan">
+    <link rel="stylesheet" href="style.css" href="text/css">
+
+    <title>freeCodeCamp Project - Survey Form</title>
+   </head>
+<body>
+    <div id="container">
+        <div id="center">
+            <h1 id="title">Programming Languages</h1>
+            <p id="description">How many programming languages do you know?</p>
+            <div id="content">
+                <div id="div-form">
+                    <form id="survey-form">
+                        <div class="component">
+                            <label class="label" for="name" id="name-label">Full name</label>
+                            <input class="input-box" id="name" type="text" name="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="component">
+                            <label class="label" for="email" id="email-label">E-mail</label>
+                            <input class="input-box" type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                        <div>
+                            <label class="label" for="number" id="number-label">Age</label>
+                            <input class="input-box" type="number" id="number" name="age" min="18" max="80" placeholder="Enter your age" required>
+                        </div>
+                        <div id="dropdown">
+                            <label id="dropdown-text" class="label" for="dropdown" id="number-label">Highest Education</label>
+                            <select class="input-lov" id="dropdown" name="highest-education">
+                                <option value="" disabled selected>Select your Highest Education</option>
+                                <option value="Highschool">Highschool</option>
+                                <option value="Certifications">Certifications</option>
+                                <option value="Graduated">Gradated</option>
+                                <option value="Masters">Masters</option>
+                                <option value="PhD">PhD</option>
+                            </select>
+                        </div>
+                        <div id="head">
+                            <label id="gender" class="label">Gender</label>
+                            <div>
+                            <input class="input-radio" type="radio" id="male" name="gender" value="male">
+                            <label class="small-label" for="male">Male</label><br>
+                            <input class="input-radio" type="radio" id="female" name="gender" value="female">
+                            <label class="small-label" for="female">Female</label><br>
+                            <input class="input-radio" type="radio" id="prefer-not-to-answer" name="gender" value="other">
+                            <label class="small-label" for="prefer-not-to-answer">Prefer Not To Answer</label><br>
+                            </div>
+                        </div>
+                    <div class="flex">
+                            <label id="PL">Programming Language</label>
+                        <div class="component-checkbox">
+                            <input name="python" type="checkbox" value="1">
+                            <label>Python</label><br>
+                            <input name="r" type="checkbox" value="2">
+                            <label>R</label><br>
+                            <input name="julia" type="checkbox" value="3">
+                            <label>Julia</label><br>
+                            <input name="javascript" type="checkbox" value="4">
+                            <label>JavaScript</label><br>
+                            <input name="html-css" type="checkbox" value="5">
+                            <label>HTML and CSS</label><br>
+                            <input name="php" type="checkbox" value="6">
+                            <label>PHP</label><br>
+                            <input name="c/c++" type="checkbox" value="7">
+                            <label>C/C++</label><br>
+                            <input name="c#" type="checkbox" value="8">
+                            <label>C#</label><br>
+                            <input name="ruby" type="checkbox" value="9">
+                            <label>Ruby</label><br>
+                        </div>
+                    </div>
+                    <div class="others">
+                        <label class="label" id="others">Other</label></br>
+                        <textarea class="input-area" type="text" id="others" name="name" placeholder="Type other ones"></textarea>
+                      </div>
+                     <div class="component">
+                        <button id="submit" class="input-button" type="submit">Submit
+                        </button>
+                     </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
